@@ -1,0 +1,40 @@
+td {
+    padding: 0 2em 0 0;
+}
+
+.soapModalRow {
+    padding-bottom: 2em;
+}
+
+.soapModalRow :first-child * {
+    display: none;
+}
+
+.soapModalRow.soapModalRowSuccess {
+    color: rgb(var(--bs-success-rgb))!important
+}
+
+.soapModalRow.soapModalRowSuccess .checkIcon {
+    display: block;
+}
+
+.soapModalRow:not(.soapModalRowSuccess,.soapModalRowFail,.soapModalRowLoading) {
+    color: rgb(var(--bs-secondary-rgb));
+}
+.soapModalRow:not(.soapModalRowSuccess,.soapModalRowFail,.soapModalRowLoading) .pendingIcon {
+    display: block;
+}
+
+.soapModalRow.soapModalRowLoading .spinner-border {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.soapModalRow.soapModalRowFail {
+    color: rgb(var(--bs-danger-rgb))!important
+}
+
+.soapModalRow.soapModalRowFail .errorIcon {
+    display: block;
+}
